@@ -52,6 +52,7 @@ public class Pathfinder<T>
             {
                 if (!visited.Contains(neighbor))
                 {
+                    visited.Add(neighbor);
                     toVisit.Enqueue(neighbor);
                     parents[neighbor] = current;
                 }
